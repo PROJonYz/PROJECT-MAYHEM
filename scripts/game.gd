@@ -95,6 +95,7 @@ func _build_ui() -> void:
     var center := CenterContainer.new()
     layer.add_child(center)
     center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+    center.mouse_filter = Control.MOUSE_FILTER_IGNORE
     upgrade_panel = PanelContainer.new()
     upgrade_panel.custom_minimum_size = Vector2(370.0, 260.0)
     center.add_child(upgrade_panel)
